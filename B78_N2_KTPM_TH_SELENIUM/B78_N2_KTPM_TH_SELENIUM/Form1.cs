@@ -53,7 +53,15 @@ namespace B78_N2_KTPM_TH_SELENIUM
             foreach(var element27 in ee27)
             {
                 Console.WriteLine(element27.Text);
-            }    
+            }
+            Thread.Sleep(2000);
+            Lhoang27.Close();
+        }
+
+        private void btn_bai3_27_Click(object sender, EventArgs e)
+        {
+            IWebDriver hoang27 = new ChromeDriver();
+            hoang27.Navigate().GoToUrl("https://www.demo.guru99.com/test/upload/");
 
         }
     }
